@@ -5,6 +5,7 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def setUp(self):
         self.seq = range(10)
+        self.foo = 'bar'
 
     def test_shuffle(self):
         # make sure the shuffled sequence does not lose any elements
@@ -18,6 +19,9 @@ class TestSequenceFunctions(unittest.TestCase):
     def test_choice(self):
         element = random.choice(self.seq)
         self.assertTrue(element in self.seq)
+
+    def test_demo(self):
+        self.assertEqual(self.foo, 'bar')
 
     def test_sample(self):
         with self.assertRaises(ValueError):
