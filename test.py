@@ -23,7 +23,7 @@ class TestSequenceFunctions(unittest.TestCase):
     def test_demo(self):
         self.assertEqual(self.foo, 'bar')
 
-    def test_demo(self):
+    def test_another_demo(self):
         self.assertNotEqual(self.foo, 'foo')
 
     def test_sample(self):
