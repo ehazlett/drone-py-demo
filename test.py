@@ -23,6 +23,9 @@ class TestSequenceFunctions(unittest.TestCase):
     def test_demo(self):
         self.assertEqual(self.foo, 'bar')
 
+    def test_demo(self):
+        self.assertNotEqual(self.foo, 'foo')
+
     def test_sample(self):
         with self.assertRaises(ValueError):
             random.sample(self.seq, 20)
